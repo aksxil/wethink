@@ -1,0 +1,535 @@
+@font-face{
+    font-family: lig;
+    src: url(./vertopal.com_helveticaneue.otf);
+}
+@font-face{
+    font-family: med;
+    src: url(./vertopal.com_helveticaneue-medium.otf);
+}
+@font-face{
+    font-family: mazi;
+    src: url(./Mazius-Extraitalic.121a71a7.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: med;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color: #F3C77C;
+    position: absolute;
+    z-index: 999999999;
+}
+
+#page1{
+    height: 120vh;
+    width: 100%;
+    padding-top: 10vw;
+    background-color: #151414;
+}
+#nav{
+    display: none;
+    padding: 1.5vw;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+#nav #box{
+    padding: 8px;
+    text-align: right;
+    height: 65px;
+    width: 65px;
+    background-color: #E7CFB1;
+}
+#nav #box h1{
+    font-size: 17px;
+    line-height: 19px;
+    
+}
+#nav #nav-prt2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav #nav-prt2 h1{
+    font-size: 17px;
+    font-weight: 500;
+    color: #E7CFB1;
+}
+#page1>h1{
+    text-align: center;
+    font-size: 41vw;
+    font-weight: 900;
+    margin-top: -8vw;
+    color: #F3C77C;
+    font-family: med;
+}
+#page1>h2{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    margin-top: -8vw;
+    color: #F3C77C;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #151414;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#page2>video{
+    height: 100%;
+    width: 40%;
+    scale: 1.2;
+}
+#page3{
+    height: 130vh;
+    width: 100%;
+    background-color: #151414;
+    padding-left: 3vw;
+    position: relative;
+}
+
+#page3 h1 {
+    font-family: med;
+    font-size: 12vw;
+    font-weight: 100;
+    color: #E7CFB1;
+    line-height: 140px;
+
+    /* background-color: blue; */
+}
+#page3 h1 span{
+    font-family: mazi;
+}
+
+#page3 #elem {
+    /* background-color: red; */
+    overflow: hidden;
+}
+#elem:nth-child(3){
+    padding-left: 25vw;
+}
+#page3 .text{
+    height: 13vw;
+    width: 30vw;
+    position: absolute;
+    right: 4%;
+    bottom: 23%;
+    display: flex;
+    align-items: center;
+}
+#page3 .text h2{
+    font-size: 1.6vw;
+    color: #E7CFB1;
+    font-family: med;
+    font-weight: 100;
+}
+#page4{
+    display: flex;
+    padding: 0 4.5vw;
+    height: 120vh;
+    width: 100%;
+    background-color: #151414;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+#page4 svg{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+   
+}
+#page4 svg:nth-child(1){
+    animation-name: anim;
+    animation-duration: 11s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes anim {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.img-cnt1{
+    height: 76vh;
+    width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.img-cnt1 video{
+    height: 76vh;
+    width: 100%;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.img-cnt2{
+    height: 55vh;
+    width: 65vh;
+    margin-top: 25vw;
+    overflow: hidden;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.img-cnt1::after{
+    content: "HEC PARIS IEC Branding, Digital, Strategie";
+    font-size: 1.3vw;
+    color: white;
+}
+.img-cnt2 img{
+    height: 55vh;
+    width: 65vh;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.img-cnt2::after{
+    content: "LE COQ TOGUE Branding, Strategie";
+    font-size: 1.3vw;
+    color: white;
+}
+#page5{
+    display: flex;
+    padding: 0 4.5vw;
+    height: 120vh;
+    width: 100%;
+    background-color: #151414;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5 .img-cnt3{
+    height: 55vh;
+    width: 65vh;
+    margin-top: -10vw;
+    overflow: hidden;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.img-cnt3::after{
+    content: "TRONE PARIS, Digital, Strategie";
+    font-size: 1.3vw;
+    color: white;
+}
+.img-cnt3 img{
+    height: 55vh;
+    width: 65vh;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.img-cnt4{
+    height: 76vh;
+    width: 50%;
+    object-fit: cover;
+    margin-top: 14vw;
+    overflow: hidden;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.img-cnt4 img{
+    height: 76vh;
+    width: 100%;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#page6{
+    display: flex;
+    padding: 0 4.5vw;
+    height: 120vh;
+    width: 100%;
+    background-color: #151414;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.img-cnt5{
+    height: 100vh;
+    width: 65%;
+    object-fit: cover;
+    margin-top: 14vw;
+    overflow: hidden;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.img-cnt5 video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#cursor {
+    pointer-events: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9999;
+    font-size:4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #000;
+    -webkit-transition: all linear 0.1s;
+    -o-transition: all linear 0.1s;
+    transition: all linear 0.1s;
+   scale: 0;
+   background-image: url(./ezgif.com-webp-to-png\ \(6\).png);
+   background-size: cover;
+   background-position: center;
+   scale: 0;
+}
+
+.img-cnt1:hover{
+    scale: .95;
+}
+.img-cnt1:hover video{
+    scale: 1.15;
+}
+.img-cnt2:hover{
+    scale: .95;
+}
+.img-cnt2:hover img{
+    scale: 1.15;
+}
+.img-cnt3:hover ,.img-cnt4:hover{
+    scale: .95;
+}
+.img-cnt3:hover img{
+    scale: 1.15;
+}
+
+.img-cnt4:hover img{
+    scale: 1.15;
+}
+#page4 #f-h{
+  position: absolute;
+  color: #e1e1e1;
+  bottom: 10%;
+  font-family: med;
+  font-weight: 100;
+  font-size: 1.3vw;
+}
+#page4 #s-h{
+    position: absolute;
+    color: #e1e1e1;
+    right: 24%;
+    bottom: 0%;
+    font-family: med;
+    font-weight: 100;
+    font-size: 1.3vw;  
+}
+#page5 #t-h{
+    position: absolute;
+    color: #e1e1e1;
+    left: 5%;
+    bottom: 28%;
+    font-family: med;
+    font-weight: 100;
+    font-size: 1.3vw;  
+}
+#page5 #fo-h{
+    position: absolute;
+    color: #e1e1e1;
+    right: 44.5%;
+    bottom: 0%;
+    font-family: med;
+    font-weight: 100;
+    font-size: 1.3vw;  
+}
+#page-ro{
+    height: 50vh;
+    width: 100%;
+    background-color: #151414;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-ro h2{
+    text-align: center;
+    font-size: 2vw;
+    color: #E7CFB1;
+    font-family: lig;
+    font-weight: 100;
+}
+#page-ro .gola{
+    position: absolute;
+    height: 10vw;
+    width: 32vw;
+    border: 2px solid #E7CFB1;
+    border-radius: 50%;
+    transition: all ease 0.7s;
+}
+#page-ro .gola:hover{
+    transform: skewX(-40deg);
+    transform: skewY(-10deg);
+}
+#page7{
+    height: 100vh;
+    width: 110%;
+    background-color: #9AC1CB;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* overflow-y: hidden; */
+}
+#page7 h1{
+    font-family: med;
+    font-weight: 100;
+    font-size: 37vw;
+    
+}
+#page7 .el{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#page8{
+    height: 90vh;
+    width: 100%;
+    padding: 0 4.5vw;
+    background-color: #9AC1CB;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow-y: hidden; */
+}
+.prt{
+    font-family: med;
+    height: 50vh;
+    width: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.prt h2{
+    font-weight: 100;
+    font-size: 2vw;
+}
+.prt h3{
+    font-family: lig;
+    font-weight: 100;
+    font-size: 1.7vw;
+    padding-top: .5vw;
+    opacity: .7;
+}
+#page9{
+    height: 200vh;
+    width: 100%;
+    padding: 0 9vw;
+    background-color: #151414;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page9 .prow{
+    height: 100%;
+    width: 20%;
+    padding: 7vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#page9 .prow img{
+    flex-shrink: 0;
+}
+#page10{
+    height: 145vh;
+    width: 100%;
+    background-color: #E7CFB1;
+    padding-top: 10vw;
+}
+#page10 h1 {
+     font-size: 6vw;
+    font-weight: 100;
+    font-family: lig;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+#page10 #aks {
+    /* background-color: red; */
+    overflow: hidden;
+}
+#aks:nth-child(3){
+    margin-bottom: 5vw;
+}
+
+#page10 .pved{
+    height: 25vw;
+    width: 25vw;
+    background-color: red;
+    margin: auto;
+}
+.pved img{
+    height: 25vw;
+    width: 25vw;
+    object-fit: cover;
+}
+#footer{
+    padding: 0 3vw;
+    height: 50vh;
+    width: 100%;
+    background-color: #151414;
+}
+#footer h1{
+    font-size: 6vw;
+    font-family: lig;
+    color: #e7cfb1ae;
+    padding-top: 8vw;
+}
+#footer h1 span{
+    font-family: lig;
+    color: #E7CFB1;
+    position: relative;
+}
+#footer h1 span::after{
+    content: "";
+    height: .3vw;
+    width: 0%;
+    position: absolute;
+    background-color: #E7CFB1;
+    left: 0;
+    bottom: 0;
+    transition: all ease 1s;
+}
+#footer h1 span:hover::after{
+    width: 100%;
+}
+.fbot{
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4vw;
+    color: white;
+}
+.fbot h5{
+    font-family: lig;
+    font-weight: 100;
+}
